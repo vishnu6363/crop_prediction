@@ -1,0 +1,19 @@
+#delpoying the flask application in EC2 instance
+
+
+1>create AwS console account
+2>create an EC2 instance with free tier as ubuntu
+3>install putty , puttygen and winspin
+4>wile creating the Ec2 instance create a private key and save it in pem file
+5>open puttygen and load pem file and click save private key and download it.
+6>open putty and give host name from the Ec2 instance->open Ec2 instance and 
+  select instance and click connection from action and there is ssh key menu in 
+  that menu there is a link Connect to your instance using its Public DNS: copy 
+  it and paste it in putty host
+7>and select ssh option in putty and auth and load the prive_key.ppk file and enter loggin and logging as your username in Ec2
+8>open the winspin and and coonect to the same host id from the Ec2
+9>then drag and drop all the file to run the appllication
+10> then install python3 in that  terminal ubuntu->sudo apt-get upgrade && sudo apt-get install python3
+11> then install all the requierment file->pip install -r requierment.txt
+12>then run the application using->python3 app.py
+13>copy the same host from Ec2(http://ec2-44-206-234-11.compute-1.amazonaws.com/) and enter :8080 to the last of the link
